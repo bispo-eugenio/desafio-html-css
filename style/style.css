@@ -7,7 +7,15 @@
 
     --font-primary: Arial, Helvetica, sans-serif;
 }
+/*==========KEYFRAMES==========*/
 
+@keyframes opacityAnimation {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
 /*==========SELETORES-DE-TAGS-BÁSICAS==========*/
 
 body {
@@ -48,6 +56,24 @@ body {
     text-decoration: none;
 }
 
+.nav-bar__link-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*HOVER-NAV-BAR*/
+.nav-bar__link-list a:hover {
+    animation: colorTrade 550ms infinite;
+}
+
+.nav-bar__link-list p {
+    opacity: 0%;
+}
+
+.nav-bar__link-list a:hover p {
+    animation: opacityAnimation 550ms infinite;
+}
 /*==========PÁGINA-PRINCIPAL==========*/
 
 .main-container {
@@ -63,7 +89,10 @@ body {
 }
 
 .main-container img {
-    width: 95%;
+    width: 100%;
+    max-width: 1350px;
+    height: 100%;
+    min-height: 745px;
     background-size: cover;
 }
 
