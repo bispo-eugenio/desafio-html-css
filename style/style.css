@@ -51,14 +51,18 @@ body {
 /*==========PÁGINA-PRINCIPAL==========*/
 
 .main-container {
+    margin: 0 0 4px 0;
+}
+
+.main-container__section-main-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 0 4px 0;
 }
 
 .main-container img {
+    width: 85%;
     background-size: cover;
 }
 .main-container h2 {
