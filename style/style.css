@@ -55,7 +55,7 @@ main {
 
 /*==========FOOTER==========*/
 
-.container-footer {
+.footer-container {
     height: 75px;
     background-color: var(--primary-color);
     display: flex;
@@ -64,28 +64,28 @@ main {
     user-select: none;
 }
 
-.container-footer__social-container {
+.footer-container__social-container {
     display: flex;
     align-items: center;
     margin-left: 20px;
     gap: 5px;
 }
 
-.container-footer__social-container--title {
+.footer-container__social-container--title {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--tertiary-color);
 }
 
-.container-footer__social-container img {
+.footer-container__social-container img {
     max-width: 30px;
     width: 100%;
 }
 
-.container-footer__copyright {
+.footer-container__copyright {
     font-family: var(--font-primary);
     font-size: 1rem;
     color: var(--tertiary-color);
 }
-.container-footer__logo {
+.footer-container__logo {
     margin-right: 20px;
 }
