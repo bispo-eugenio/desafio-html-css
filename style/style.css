@@ -1,4 +1,8 @@
-/*==========VARÁVEIS DO CSS==========*/
+/*==========IMPORTS==========*/
+@import url(reset.css);
+@import url(launch.css);
+
+/*==========VARÁVEIS-DO-CSS==========*/
 
 :root{
     --primary-color: #1b357e;
@@ -278,7 +282,7 @@ body {
     margin-right: 20px;
 }
 
-/*=====HOVER=====*/
+/*==========MEDIA-QUERY==========*/
 
 @media(max-width: 580px){
 
@@ -312,6 +316,7 @@ body {
 
     .footer-container__logo {
         margin: 0;
+        margin-bottom: 10px;
     }
 
 }

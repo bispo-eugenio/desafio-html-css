@@ -1,0 +1,63 @@
+.car-option-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.car-option-container__section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.car-option-container__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.car-option-container__item {
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.car-option-container__describe {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.car-option-container__box {
+    display: flex;
+    gap: 5px;
+}
+
+.car-option-container__checkbox {
+    width: 28px;
+    height: 28px;
+    align-self: center;
+}
+
+.car-option-container__details {
+    align-self: start;
+    width: 234px;
+}
+
+.car-option-container__details--name {
+    color: var(--secondary-color);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
+.car-option-container__details--price {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
+.car-option-container__info {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
