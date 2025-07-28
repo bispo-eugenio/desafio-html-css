@@ -6,16 +6,17 @@
 .car-option-container__section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .car-option-container__options {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /*Os items flex são esticados para o tamanho da caixa */
     width: 100%;
     height: auto;
     gap: 20px;
+    margin-top: 15px;
 }
 
 .car-option-container__item {
@@ -36,8 +37,8 @@
 
 .car-option-container__checkbox {
     width: 28px;
-    height: 28px;
-    align-self: center;
+    aspect-ratio: 1; /*Tamanho 1:1*/
+    align-self: start;
 }
 
 .car-option-container__details {
@@ -59,5 +60,20 @@
 .car-option-container__info {
     width: 24px;
     height: 24px;
+    align-self: start;
+}
+.car-option-container__button {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     align-self: center;
+    width: 105px;
+    text-align: center;
+    padding: 0.25% 1.5%;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.car-option-container__button:hover {
+    
 }

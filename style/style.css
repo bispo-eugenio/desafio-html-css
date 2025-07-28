@@ -240,6 +240,27 @@ body {
         max-height: 200px;
     }
 }
+
+@media(height >= 738px){
+
+    .main-container img {
+        width: 100%;
+        max-width: 1600px;
+        height: 100%;
+        min-height: 500px;
+    }
+
+    .main-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .main-container__section-main-page {
+        height: 100%;
+    }
+
+
+    
+}
 /*==========FOOTER==========*/
 
 .footer-container {
@@ -319,4 +340,10 @@ body {
         margin-bottom: 10px;
     }
 
+}
+
+@media (width >= 1500px) and  (height >= 738px){
+    .footer-container {
+        height: 110.5px;
+    }
 }
