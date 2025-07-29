@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    height: 100vh;
 }
 
 .car-option-container__options {
@@ -17,10 +18,15 @@
     height: auto;
     gap: 20px;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .car-option-container__item {
     width: 320px;
+    box-sizing: border-box;
+}
+
+.car-option-container__car-image {
     box-sizing: border-box;
 }
 
@@ -68,12 +74,62 @@
     align-self: center;
     width: 105px;
     text-align: center;
-    padding: 0.25% 1.5%;
+    padding: 0.5% 1.5%;
     border-radius: 8px;
     user-select: none;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .car-option-container__button:hover {
-    
+    background-color: var(--primary-color);    
+}
+
+@media(width < 1000px) {
+
+    .car-option-container__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car-option-container__car-image {
+        width: 50%;
+        align-self: center;
+    }
+
+    .car-option-container__details--name {
+        font-size: 0.9rem;
+    }
+
+    .car-option-container__details--price {
+        font-size: 0.9rem;
+    }
+
+    .car-option-container__checkbox {
+        width: 24px;
+    }
+
+    .car-option-container__info {
+        width: 16px;
+        height: 16px;
+    }
+
+    .car-option-container__button {
+        margin-top: 10px;
+    }
+}
+
+@media (width <= 660px) {
+    .car-option-container__section {
+        gap: 0;
+    }
+    .car-option-container__options {
+        margin: 0;
+    }
+}
+
+@media (height >= 745px){
+    .car-option-container__section iframe {
+        height: 650px;
+    }
 }
