@@ -40,7 +40,7 @@
 .contact-form-container__form--input, .contact-form-container__form--input-select {
     width: 350px;
     height: 30px;
-    padding: 5px 40px 5px 0px;
+    padding: 10px 40px 10px 0px;
     align-self: flex-start;
     border-radius: 8px;
     border-style: solid;
@@ -54,6 +54,20 @@
     width: 394px;
     height: 42px;
     text-indent: 5px;
+}
+
+.contact-form-container__dialog-info textarea {
+    padding-left: 6px;
+}
+
+.contact-form-container__dialog-info textarea::placeholder {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.contact-form-container__dialog-info textarea:focus::placeholder {
+    visibility: hidden;
+    padding: 5px;
 }
 
 .contact-form-container__form__button {
